@@ -1,5 +1,6 @@
+/* ==== Custom Theme by Waze ==== */
 :root{
-  --bg: #fdfcfb;
+  --main-bg: #f4f0f8;
   --card: #ffffff;
   --muted: #6b6b6b;
   --accent: #6a5acd;
@@ -49,3 +50,33 @@ h2{font-family:'Poppins',sans-serif;margin-bottom:0.6rem}
 .gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.6rem;margin-top:0.8rem}
 .gallery-grid img{width:100%;height:110px;object-fit:cover;border-radius:8px}
 footer{text-align:center;color:#888;padding:2rem 0;font-size:0.9rem}
+
+/* ===== 🌙 Custom Theme Enhancements ===== */
+:root {
+  --accent: #b497d6; /* soft lavender tone */
+  --main-bg: #f4f0f8;
+  --card: #ffffff;
+  --muted: #6b6b6b;
+}
+
+body {
+  background: var(--main-bg);
+  color: #2c2233;
+}
+
+/* ===== 👻 Profile Picture Styling ===== */
+.profile-pic {
+  display: block;
+  margin: 2rem auto;
+  width: 200px;
+  max-height: 400px; /* good for tall images */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Optional tweak if you want your name or intro text centered */
+#intro {
+  text-align: center;
+}
+
