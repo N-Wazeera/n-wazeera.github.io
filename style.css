@@ -80,3 +80,33 @@ body {
   text-align: center;
 }
 
+/* ===== 🧭 Side-by-side intro layout ===== */
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+/* Keep things centered on mobile */
+@media (max-width: 700px) {
+  .intro-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
